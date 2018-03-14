@@ -4,8 +4,59 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Godrej Reflections | Harlur, Bangalore</title>
-    <meta name='description' content='Godrej Reflections Project in Haralur, off Sarjapur Road, Bengaluru'>
+    <meta name='description' content='Godrej Reflections Project in Haralur, Off Sarjapur Road, Bengaluru'>
     <meta name='keywords' content='Godrej Reflections, Project in Haralur, Project in Bangalore'>
+
+    <script type='application/ld+json'>{
+			'@context': 'http://schema.org/',
+			'@type': 'Product',
+			name: 'Godrej Reflections Project in Haralur, Off Sarjapur Road, Bangalore',
+			image: 'https://godrej-projects.com/godrej-reflection',
+			description: project.slug.unSlug(), // TODO
+			url: this.props.location.pathname,
+			category: {
+				'@type': 'ApartmentComplex',
+				amenityFeature: (project.amenities || []).map((a) => a.name),
+				geo: {
+					'@type': 'GeoCoordinates',
+					latitude: project.location.gps.coordinates[1],
+					longitude: project.location.gps.coordinates[0],
+				},
+			},
+			offers: {
+				'@type': 'Offer',
+				offeredBy: {
+					'@type': 'Organization',
+					name: 'Settlin',
+					legalName: 'Linking Spaces Technologies Pvt Ltd',
+					logo: 'https://static.settlin.in/images/logo/pure/pure.png',
+					address: {
+						'@type': 'PostalAddress',
+						streetAddress: 'Second Floor, #46/A, 1st D Main Road, Jakkasandra Extension',
+						addressLocality: 'Koramangala 1st Block, Bengaluru, Karnataka',
+						postalCode: '560034',
+					},
+					areaServed: 'Bengaluru',
+					email: 'info@settlin.in',
+					telephone: '+91-95-9003-9003',
+					url: 'https://settlin.in',
+					brand: {
+						'@type': 'Brand',
+						name: 'Settlin',
+						logo: 'https://static.settlin.in/images/logo/pure/pure.png',
+					},
+				},
+				priceSpecification: {
+					'@type': 'PriceSpecification',
+					priceCurrency: 'INR',
+					minPrice: 0,
+					maxPrice: 0,
+					price: 0,
+					// TODO price range - PriceSpecification
+				}
+			},
+		}}</script>
+
     <link rel="shortcut icon" type="image/ico" href="../images/favicon.ico" />
 
     <link rel='stylesheet' href='css/styles-merged.css'>
