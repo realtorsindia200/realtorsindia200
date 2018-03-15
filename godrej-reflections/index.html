@@ -68,7 +68,10 @@
     <link rel='stylesheet' href='css/style.min.css'>
     <link rel='stylesheet' href='fonts/icomoon/style.css'>
 
-    <style>#features img {width: 100%}</style>
+    <style>
+      #features img {width: 100%}
+      #map {height: 400px; width: 100%;}
+    </style>
     <!--[if lt IE 9]>
       <script src='js/vendor/html5shiv.min.js'></script>
       <script src='js/vendor/respond.min.js'></script>
@@ -106,26 +109,41 @@
     
     <section class='probootstrap-hero pro' style='background-image: url(img/godrej-reflections.jpg); height: 100vh' data-section='home' data-stellar-background-ratio='0.5'>
       <div class='container'>
-        <div class='row intro-text'>
+        <div class='row intro-text' style='padding-top: 0px;'>
           <div class='col-md-8 col-md-offset-2 text-center'>
             <h1 class='probootstrap-heading probootstrap-animate'>Godrej Reflections</h1>
-            <div class='probootstrap-subheading center'>
+            <h2 class='probootstrap-animate' style='color: white; font-size: 1rem;'>Shubh Enclave, Harlur / Sarjapur Road</h2>
+            <div class='probootstrap-subheading center' style='margin-top: 100px;'>
               <p class='probootstrap-animate'>
-                Where you live, reflects who you are<br/>
-                RERA ID - PR/KN/180312/002843<br/>
-                <h2>Call us at <a href='tel:+917829340774' style='color:inherit'>+91-7829340774</a></h2>
+                <b>Where you live, reflects who you are</b><br/>
+                RERA Ack No - PR/KN/180312/002843<br/>
+                <h3 class='probootstrap-animate'>Call us at <a href='tel:+918884547000' style='color:inherit; font-weight: bold;'>+91-8884547000</a></h3>
               </p>
             </div>
           </div>
         </div>
       </div>
+      <form class='contact-form probootstrap-form' style='position: absolute; bottom: 0; width: 100%; margin: 0 0 8px 0; padding: 8px 4px;'>
+        <div class='col-md-3 hidden-sm hidden-xs'>
+          <input name='name' type='text' class='form-control' placeholder='Your Name'>
+        </div>
+        <div class='col-md-3 hidden-sm hidden-xs'>
+          <input name='email' type='email' class='form-control' placeholder='Your Email'>
+        </div>
+        <div class='col-md-3 col-xs-7'>
+          <input name='mobile' type='number' required class='form-control' placeholder='Your Phone'>
+        </div>
+        <div class='col-md-3 col-xs-5 text-right'>
+          <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+        </div>
+      </form>
     </section>
 
     <section class='probootstrap-section' id='amenities' data-section='amenities'>
       <div class='container'>
         <div class='row text-center mb100'>
           <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
-            <h2 class='mb30 text-black probootstrap-heading'>Amenities</h2>
+            <h2 class='mb30 text-black probootstrap-heading'>Godrej Reflections Amenities</h2>
           </div>
         </div>
         <div class='row'>
@@ -171,7 +189,7 @@
       <div class='container'>
         <div class='row text-center mb100'>
           <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
-            <h2 class='mb30 text-black probootstrap-heading'>Features</h2>
+            <h2 class='mb30 text-black probootstrap-heading'>Godrej Reflections Features</h2>
             <p>A great blend of luxury, comfort, open space and security, at a location that is well connected (within 20 minutes) to prominent areas like Whitefield, Electronic City, HSR Layout and Kormangala.</p>
           </div>
         </div>
@@ -229,8 +247,8 @@
       <div class='container'>
         <div class='row text-center mb100'>
           <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
-            <h2 class='mb30 text-black probootstrap-heading'>Configurations</h2>
-            <p>Total 265 Units in Phasea I, getting booked fast</p>
+            <h2 class='mb30 text-black probootstrap-heading'>Godrej Reflections Configurations</h2>
+            <p>Total 265 Units in Phase I, getting booked fast</p>
             <p>Choose your option</p>
           </div>
         </div>
@@ -304,7 +322,7 @@
           <div class='col-md-4'>
             <div class='probootstrap-pricing'>
               <h2>3000-3300 sqft</h2>
-              <p class='probootstrap-price'><strong>Penthouse</strong></p>
+              <p class='probootstrap-price'><strong>Duplex</strong></p>
               <ul class='probootstrap-list text-left mb50'>
                 <li class='probootstrap-check'>2.34 cr onwards</li>
                 <li class='probootstrap-check'>4 BHK - Duplex</li>
@@ -323,7 +341,7 @@
       <div class='container'>
         <div class='row'>
           <div class='col-md-6'>
-            <form id='contact-form' class='probootstrap-form'>
+            <form class='contact-form probootstrap-form'>
               <h2 class='text-black mt0'>Get In Touch</h2>
               <div class='form-group'>
                 <input name='name'type='text' class='form-control' placeholder='Your Name'>
@@ -339,20 +357,25 @@
               </div>
             </form>
           </div>
-          <div class='col-md-3 col-md-push-1'>
+          <div class='col-md-5 col-md-push-1'>
             <ul class='probootstrap-contact-details'>
               <li>
                 <span class='text-uppercase'>Email</span>
-                realtorsindia200@gmail.com
+                info@godrej-projects.com
               </li>
               <li>
                 <span class='text-uppercase'>Phone</span>
-                <a href='tel:+917829340774' style='color:inherit'>+91-7829340774</a>
+                <a href='tel:+918884547000' style='color:inherit'>+91-8884547000</a>
               </li>
               <li>
                 <span class='text-uppercase'>Address</span>
-                <p style='margin: 0'>Godrej Reflections</p>
-                <p style='margin: 0'>Harlur Road, Off Sarjapur Road, Bangalore</p>
+                <p>
+                  <a href='https://goo.gl/maps/nvP3FSVbBjQ2'>
+                    Godrej Reflections<br/>
+                    Shubh Enclave, Harlur Road, Off Sarjapur Road, Bangalore
+                  </a>
+                  <div id='map'></div>
+                </p>
               </li>
             </ul>
           </div>
@@ -378,7 +401,7 @@
     <script src='js/scripts.min.js'></script>
     <script src='js/custom.js'></script>
     <script>
-      var form = $('form#contact-form');
+      var form = $('form.contact-form');
       form.submit(function(e) {
         e.preventDefault();
         $.get({
@@ -388,6 +411,19 @@
           error: function(data) {console.log(data);}
         });
       });
+
+      function initMap() {
+        var uluru = {lat: 12.9010418, lng: 77.6613744};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
     </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYqDwSP5F0dbERd4ttXZvd5jsLxjTbJWM&callback=initMap" type="text/javascript"></script>
   </body>
 </html>
