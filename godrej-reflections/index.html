@@ -110,7 +110,7 @@
     <section class='probootstrap-hero pro' style='background-image: url(img/godrej-reflections.jpg); height: 100vh' data-section='home' data-stellar-background-ratio='0.5'>
       <div class='container'>
         <div class='row intro-text' style='padding-top: 0px;'>
-          <div class='col-md-8 col-md-offset-2 text-center'>
+          <div class='col-md-6 col-md-offset-2 text-center'>
             <h1 class='probootstrap-heading probootstrap-animate'>Godrej Reflections</h1>
             <h2 class='probootstrap-animate' style='color: white; font-size: 1rem;'>Shubh Enclave, Harlur / Sarjapur Road</h2>
             <div class='probootstrap-subheading center' style='margin-top: 100px;'>
@@ -121,22 +121,25 @@
               </p>
             </div>
           </div>
+          <div class='col-md-4'>
+            <form class='contact-form probootstrap-form'>
+              <h2 class='text-black mt0'>Get In Touch</h2>
+              <div class='form-group'>
+                <input name='name' type='text' class='form-control' placeholder='Your Name'>
+              </div>
+              <div class='form-group'>
+                <input name='email' type='email' class='form-control' placeholder='Your Email'>
+              </div>
+              <div class='form-group'>
+                <input name='mobile' type='number' required class='form-control' placeholder='Your Phone'>
+              </div>
+              <div class='form-group'>
+                <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <form class='contact-form probootstrap-form' style='position: absolute; bottom: 0; width: 100%; margin: 0 0 8px 0; padding: 8px 4px;'>
-        <div class='col-md-3 hidden-sm hidden-xs'>
-          <input name='name' type='text' class='form-control' placeholder='Your Name'>
-        </div>
-        <div class='col-md-3 hidden-sm hidden-xs'>
-          <input name='email' type='email' class='form-control' placeholder='Your Email'>
-        </div>
-        <div class='col-md-3 col-xs-7'>
-          <input name='mobile' type='number' required class='form-control' placeholder='Your Phone'>
-        </div>
-        <div class='col-md-3 col-xs-5 text-right'>
-          <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
-        </div>
-      </form>
     </section>
 
     <section class='probootstrap-section' id='amenities' data-section='amenities'>
@@ -183,6 +186,10 @@
           </div>
         </div>
       </div>
+      <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0;'>
+        <input name='mobile' type='number' required class='form-control' style='display: inline-block; width: auto;' placeholder='Your Phone'>
+        <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+      </form>
     </section>
 
     <section class='probootstrap-section probootstrap-bg-light' id='features' data-section='features'>
@@ -240,6 +247,10 @@
         </div>
         <!-- END row -->
       </div>
+      <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0; background: transparent;'>
+        <input name='mobile' type='number' required class='form-control' style='display: inline-block; width: auto;' placeholder='Your Phone'>
+        <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+      </form>
     </section>
     <!-- END section -->
 
