@@ -70,6 +70,7 @@
 
     <style>
       #features img {width: 100%}
+      img.icon {width: 32px;}
       #map {height: 400px; width: 100%;}
     </style>
     <!--[if lt IE 9]>
@@ -78,7 +79,15 @@
     <![endif]-->
   </head>
   <body>
-    
+    <div style='position:fixed;bottom:8px;left:8px;z-index:100;box-shadow:0 0px 30px 5px rgba(0,0,0,.15);padding:8px 4px;border:1px solid grey;background:white;border-radius:30px;'>
+      <a href='tel:+918884547000' style='color:inherit;'>
+        <img class='icon' style='width: 29px;' src='./img/icon-call.svg' alt='Call Us'>
+      </a>
+      <br/>
+      <a href='https://api.whatsapp.com/send?phone=918884547000' style='color:inherit;'>
+        <img class='icon' style='' src='./img/icon-whatsapp.svg' style='color:green;' alt='Whatsapp Us'>
+      </a>
+    </div>
     <!-- Fixed navbar -->
     <nav class='navbar navbar-default probootstrap-navbar'>
       <div class='container'>
@@ -136,6 +145,21 @@
               </div>
               <div class='form-group'>
                 <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+              </div>
+
+              <div style='margin-top: 40px'>
+                <p>
+                  <a href='tel:+918884547000' style='color:inherit;'>
+                    <img class='icon' style='width: 29px;' src='./img/icon-call.svg' alt='Call Us'/>
+                    <span style='font-size: 24px; font-weight: bold;'>+91-8884547000</span>
+                  </a>
+                </p>
+                <p>
+                  <a href='https://api.whatsapp.com/send?phone=918884547000' style='color:inherit;'>
+                    <img class='icon' src='./img/icon-whatsapp.svg' style='color:green;' alt='Whatsapp Us'/>
+                    <span>+91-8884547000</span>
+                  </a>
+                </p>
               </div>
             </form>
           </div>
@@ -197,7 +221,7 @@
       <div class='container'>
         <div class='row text-center mb100'>
           <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
-            <h2 class='mb30 text-black probootstrap-heading'>Godrej Reflections Features</h2>
+            <h2 class='mb30 text-black probootstrap-heading'>Features</h2>
             <p>A great blend of luxury, comfort, open space and security, at a location that is well connected (within 20 minutes) to prominent areas like Whitefield, Electronic City, HSR Layout and Kormangala.</p>
           </div>
         </div>
@@ -213,6 +237,7 @@
               <li class='probootstrap-check'>Design maximizes the view of lake</li>
               <li class='probootstrap-check'>Great location</li>
             </ul>
+            <p style='margin-top: 100px;'><a href='#contact' class='btn btn-primary'>Contact us</a></p>                        
           </div>
         </div>
         <!-- END row -->
@@ -229,6 +254,7 @@
               <li class='probootstrap-check'>Premium specifications and design</li>
               <li class='probootstrap-check'>Triple height lobbies and glass elevators</li>
             </ul>
+            <p style='margin-top: 100px;'><a href='#contact' class='btn btn-primary'>Contact us</a></p>                        
           </div>
         </div>
         <!-- END row -->
@@ -244,6 +270,7 @@
               <li class='probootstrap-check'>Low density</li>
               <li class='probootstrap-check'>Expansive greenery</li>
             </ul>
+            <p style='margin-top: 100px;'><a href='#contact' class='btn btn-primary'>Contact us</a></p>            
           </div>
         </div>
         <!-- END row -->
@@ -259,7 +286,7 @@
       <div class='container'>
         <div class='row text-center mb100'>
           <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
-            <h2 class='mb30 text-black probootstrap-heading'>Godrej Reflections Configurations</h2>
+            <h2 class='mb30 text-black probootstrap-heading'>Configurations</h2>
             <p>Total 265 Units in Phase I, getting booked fast</p>
             <p>Choose your option</p>
           </div>
