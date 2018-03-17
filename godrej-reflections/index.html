@@ -522,7 +522,7 @@
       form.submit(function(e) {
         e.preventDefault();
         $.get({
-          url: 'https://portal.settlin.in/enquiry?' + form.serialize(),
+          url: 'https://portal.settlin.in/enquiry?' + $(e.target).serialize(),
           type: 'get',
           success: function(data) {form[0].reset(); $('#enquiry-btn').val('We will call you soon!');},
           error: function(data) {console.log(data);}
