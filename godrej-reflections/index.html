@@ -144,7 +144,7 @@
                 <input name='mobile' type='number' required class='form-control' placeholder='Your Phone'>
               </div>
               <div class='form-group'>
-                <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+                <input type='submit' class='btn btn-primary' value='Enquire' onclick='goog_report_conversion("https://godrej-projects.com/godrej-reflections?from=cover")'>
               </div>
 
               <div style='margin-top: 40px'>
@@ -213,7 +213,7 @@
       </div>
       <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0;'>
         <input name='mobile' type='number' required class='form-control' style='display: inline-block; width: auto;' placeholder='Your Phone'>
-        <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+        <input type='submit' class='btn btn-primary' value='Enquire' onclick='goog_report_conversion("https://godrej-projects.com/godrej-reflections?from=amenities")'>
       </form>
     </section>
 
@@ -277,7 +277,7 @@
       </div>
       <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0; background: transparent;'>
         <input name='mobile' type='number' required class='form-control' style='display: inline-block; width: auto;' placeholder='Your Phone'>
-        <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+        <input type='submit' class='btn btn-primary' value='Enquire' onclick='goog_report_conversion("https://godrej-projects.com/godrej-reflections?from=features")'>
       </form>
     </section>
     <!-- END section -->
@@ -375,7 +375,7 @@
       </div>
       <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0; background: transparent;'>
         <input name='mobile' type='number' required class='form-control' style='display: inline-block; width: auto;' placeholder='Your Phone'>
-        <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+        <input type='submit' class='btn btn-primary' value='Enquire' onclick='goog_report_conversion("https://godrej-projects.com/godrej-reflections?from=configurations")'>
       </form>
     </section>
     <!-- END section -->
@@ -391,7 +391,7 @@
       </div>
       <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0; background: transparent;'>
         <input name='mobile' type='number' required class='form-control' style='display: inline-block; width: auto;' placeholder='Your Phone'>
-        <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+        <input type='submit' class='btn btn-primary' value='Enquire' onclick='goog_report_conversion("https://godrej-projects.com/godrej-reflections?from=floorplans")'>
       </form>
     </section>
     <!-- END section -->
@@ -470,7 +470,7 @@
                 <input name='mobile' type='number' required class='form-control' placeholder='Your Phone'>
               </div>
               <div class='form-group'>
-                <input type='submit' id='enquiry-btn' class='btn btn-primary' value='Enquire'>
+                <input type='submit' class='btn btn-primary' value='Enquire' onClick='goog_report_conversion("https://godrej-projects.com/godrej-reflections?from=contact")'>
               </div>
             </form>
           </div>
@@ -541,6 +541,38 @@
         });
       }
     </script>
+    <!-- Google Code for Godrej Conversion Page
+    In your html page, add the snippet and call
+    goog_report_conversion when someone clicks on the
+    chosen link or button. -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      goog_snippet_vars = function() {
+        var w = window;
+        w.google_conversion_id = 812499922;
+        w.google_conversion_label = "mni6COLGi38Q0oe3gwM";
+        w.google_remarketing_only = false;
+      }
+      // DO NOT CHANGE THE CODE BELOW.
+      goog_report_conversion = function(url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function() {
+          if (typeof (url) != 'undefined') {
+            window.location = url;
+          }
+        }
+        var conv_handler = window['google_trackConversion'];
+        if (typeof (conv_handler) == 'function') {
+          conv_handler(opt);
+        }
+      }
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js">
+    </script>
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYqDwSP5F0dbERd4ttXZvd5jsLxjTbJWM&callback=initMap" type="text/javascript"></script>
   </body>
 </html>
