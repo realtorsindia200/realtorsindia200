@@ -543,9 +543,10 @@
       form.submit(function(e) {
         e.preventDefault();
         $.get({
+          // url: 'http://localhost:3000/enquiry?' + $(e.target).serialize(),
           url: 'https://portal.settlin.in/enquiry?' + $(e.target).serialize(),
           type: 'get',
-          success: function(data) {form[0].reset(); $('#enquiry-btn').val('We will call you soon!');},
+          success: function(data) {e.target.reset(); (e.target.querySelector('[type=submit]') || {}).value = 'We will call you soon!';},
           error: function(data) {console.log(data);}
         });
       });
