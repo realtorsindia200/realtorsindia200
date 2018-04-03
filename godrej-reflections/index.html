@@ -85,7 +85,7 @@
       </a>
       <br/>
       <a href='https://api.whatsapp.com/send?phone=918884547000' style='color:inherit;'>
-        <img class='icon' style='' src='./img/icon-whatsapp.svg' style='color:green;' alt='Whatsapp Us'>
+        <img class='icon' src='./img/icon-whatsapp.svg' style='color:green;' alt='Whatsapp Us'>
       </a>
     </div>
     <!-- Fixed navbar -->
@@ -211,6 +211,14 @@
           </div>
         </div>
       </div>
+      <div class='row text-center mb100'>
+        <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
+          <object data="landscape.pdf" type="application/pdf" width="100%" height="500">
+            alt :
+            <a href="landscape.pdf">Download Here</a>
+          </object>
+        </div>
+      </div>
       <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0;'>
         <input name='mobile' type='number' required class='form-control' style='display: inline-block; width: auto;' placeholder='Your Phone'>
         <input type='submit' class='btn btn-primary' value='Enquire' onclick='goog_report_conversion("https://godrej-projects.com/godrej-reflections?from=amenities")'>
@@ -222,6 +230,8 @@
         <div class='row text-center mb100'>
           <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
             <h2 class='mb30 text-black probootstrap-heading'>Features</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HRGUOCpd-0Y?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
             <p>A great blend of luxury, comfort, open space and security, at a location that is well connected (within 20 minutes) to prominent areas like Whitefield, Electronic City, HSR Layout and Kormangala.</p>
           </div>
         </div>
@@ -373,6 +383,15 @@
           </div>
         </div>
       </div>
+      <div class='row text-center mb100'>
+        <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
+          <h2 class='mb30 text-black probootstrap-heading'>Model Flat</h2>
+          <object data="model.pdf" type="application/pdf" width="100%" height="500">
+            alt :
+            <a href="model.pdf">Download Here</a>
+          </object>
+        </div>
+      </div>
       <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0; background: transparent;'>
         <input name='mobile' type='number' required class='form-control' style='display: inline-block; width: auto;' placeholder='Your Phone'>
         <input type='submit' class='btn btn-primary' value='Enquire' onclick='goog_report_conversion("https://godrej-projects.com/godrej-reflections?from=configurations")'>
@@ -381,12 +400,14 @@
     <!-- END section -->
     
     <section class='probootstrap-section probootstrap-bg-light' id='floorplans' data-section='floorplans'>
-      <div class='container'>
-        <div class='row text-center mb100'>
-          <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
-            <h2 class='mb30 text-black probootstrap-heading'>Godrej Reflections Floorplans</h2>
-            <p><a href='#contact' class='btn btn-primary'>Get Floorplans</a></p>
-          </div>
+      <div class='row text-center mb100'>
+        <div class='col-md-8 col-md-offset-2 probootstrap-section-heading'>
+          <h2 class='mb30 text-black probootstrap-heading'>Godrej Reflections Floorplans</h2>
+          <p>Floorplans</p>
+          <object data="floorplans.pdf" type="application/pdf" width="100%" height="500">
+            alt :
+            <a href="floorplans.pdf" class='btn btn-primary'>Download Here</a>
+          </object>
         </div>
       </div>
       <form class='contact-form probootstrap-form text-center' style='padding: 8px 4px; box-shadow: none; margin-bottom: 0; background: transparent;'>
@@ -522,9 +543,10 @@
       form.submit(function(e) {
         e.preventDefault();
         $.get({
+          // url: 'http://localhost:3000/enquiry?' + $(e.target).serialize(),
           url: 'https://portal.settlin.in/enquiry?' + $(e.target).serialize(),
           type: 'get',
-          success: function(data) {form[0].reset(); $('#enquiry-btn').val('We will call you soon!');},
+          success: function(data) {e.target.reset(); (e.target.querySelector('[type=submit]') || {}).value = 'We will call you soon!';},
           error: function(data) {console.log(data);}
         });
       });
